@@ -19,6 +19,14 @@ new_node_right->parent = parent;
 new_node_right->right = NULL;
 new_node_right->left= NULL;
 
+if (parent->right != NULL)
+{
+new_node_right = parent->right;
+parent->right->parent = new_node_right;
+}
+
+parent->right = new_node_right;
+
 return (new_node_right);
 
 }
