@@ -1,4 +1,6 @@
 #include "binary_trees.h"
+#include <stdlib.h>
+#include <stdio.h>
 /**
  * binary_tree_insert_right - Creates a new binary tree node on the right
  * @parent: A pointer to the parent node
@@ -8,5 +10,11 @@
  */
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 {
+if (tree == NULL)
+return; 
+
+binary_tree_preorder(tree->left, func);
+binary_tree_preorder(tree->right, func);
+printf("%d\n", tree->n);
 
 }
