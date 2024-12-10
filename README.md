@@ -1,0 +1,1 @@
+Trees that are binary, as in 2, no more than 2 nodes per branch (pun intended).
