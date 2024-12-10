@@ -3,11 +3,12 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_t - Creates a new binary tree node
+ * binary_tree_insert_left - Creates a new binary tree node
  * @parent: A pointer to the parent node
  * @value: The value to store in the new node
  *
- * Desc: fonction
+ * Desc: If parent already has a left child, the new node takes its place,
+ * and the old left child becomes the left child of the new node.
  *
  * Return: A pointer to the new node, or NULL on failure
  */
