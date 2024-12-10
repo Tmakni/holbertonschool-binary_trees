@@ -7,6 +7,8 @@
  * @parent: A pointer to the parent node
  * @value: The value to store in the new node
  *
+ * Desc: fonction
+ *
  * Return: A pointer to the new node, or NULL on failure
  */
 
