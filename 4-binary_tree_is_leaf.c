@@ -13,7 +13,6 @@ if (node == NULL)
 return (0);
 
 if (node->left == NULL && node->right == NULL)
-printf("I am a leaf!\n");
 return (1);
 
 return (0);
