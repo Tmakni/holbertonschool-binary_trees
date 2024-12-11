@@ -19,7 +19,6 @@ grandparent = parent->parent;
 if (grandparent->left == parent)
 return (grandparent->right);
 
-
 if (grandparent->right == parent)
 return (grandparent->left);
 
