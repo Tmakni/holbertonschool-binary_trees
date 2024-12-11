@@ -17,5 +17,5 @@ return;
 func(tree->n);
 binary_tree_preorder(tree->left, func);
 binary_tree_preorder(tree->right, func);
-printf("%d\n", tree->n);
+
 }
