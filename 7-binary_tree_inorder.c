@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 #include <stdlib.h>
 /**
- * binary_tree_preorder - Traverses the tree in preorder
+ * binary_tree_inorder - Traverses the tree in inorder
  * @tree: Pointer to root of tree.
  * @func: The pointer that moves through the nodes
  *
@@ -13,8 +13,8 @@ if (tree == NULL || func == NULL)
 return;
 
 func(tree->n);
-binary_tree_preorder(tree->left, func);
+binary_tree_inorder(tree->left, func);
 printf("%d", tree->n);
-binary_tree_preorder(tree->right, func);
+binary_tree_inorder(tree->right, func);
 
 }
