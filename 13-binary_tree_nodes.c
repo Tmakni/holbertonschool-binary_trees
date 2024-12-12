@@ -1,5 +1,5 @@
-#include "binary_trees.h"
 #include <stdlib.h>
+#include "13-main.c"
 
 /**
  * binary_tree_nodes - Counts the number of leaves
@@ -10,20 +10,20 @@
 
 size_t binary_tree_nodes(const binary_tree_t *tree)
 {
-	size_t count;
+	size_t count = 0;
 
 	if (tree == NULL)
 	{
 		return (0);
 	}
 
-	count = 1;
 	if (tree->left != NULL || tree->right != NULL)
 	{
-		count = 1;
+		count++;
 	}
-	count += binary_tree_nodes(tree->left);
-	count += binary_tree_nodes(tree->right);
+
+	 binary_tree_nodes(tree->left);
+	 binary_tree_nodes(tree->right);
 
 	return (count);
 }
